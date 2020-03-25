@@ -3,7 +3,7 @@ title: Advanced usage reporting
 kind: documentation
 ---
 
-*Note*
+#### Note
 
 This feature is currently still in development and is changing on a day-to-day basis. We're enabling it on a case basis for customers interested in helping us shape the feature and with an immediate need for the raw data.
 
@@ -27,4 +27,40 @@ The Custom Reporting page provides the following information and functionality:
 In order to start receiving daily data, an administrator will need to create a new report via the user interface. 
 
 {{< img src="account_management/billing/advanced-usage-reporting-01.png" alt="Getting Started" >}}
+
+The 'Applied Tags' section enables the following:
+
+* Entering up to three tag keys from a dropdown. The dropdown is pre-populated with existing tags on the account.
+* Deleting and editing existing tags.
+
+{{< img src="account_management/billing/advanced-usage-reporting-02.png" alt="Applied Tags" >}}
+
+* Once the tags are configured, it will take a full 24-hour period for the first report to be generated.
+* The reports will be generated on an ongoing basis.
+* If tags are changed, the new reports will reflect the new tags. However, the previous reports will keep the old ones.
+
+### Getting the Data
+
+Once the reports start being generated, they will be updated daily and aggregated monthly in this table.
+
+{{< img src="account_management/billing/advanced-usage-reporting-03.png" alt="Getting Data" >}}
+
+* Clicking on a specific time period will expand a view on the right where reports can be downloaded as CSVs
+* Data can either be downloaded daily or at the end of the month.
+
+{{< img src="account_management/billing/advanced-usage-reporting-04.png" alt="Download data" >}}
+
+Data can also be pulled using the tool's Public API (endpoint documentation below).
+
+### Interpreting the Data
+
+This is how the data in a Custom Timeseries Report by Tags using two tags (`team` and `service`) woudl look like, formatted as a table for easier reading:
+
+| public_id   | hour                  | team      | service               | num_custom_timeseries           |
+|-------------|-----------------------|-----------|-----------------------|---------------------------------|
+| publicid1   | 2020-02-01 00:00:00   | <empty>   | service1 | service2   | 50                              |
+| publicid1   | 2020-02-01 09:00:00   | team1     |                       | 28                              |
+| publicid1   | 2020-02-01 18:00:00   | team2     | service3              | 1023                            |
+
+
 
