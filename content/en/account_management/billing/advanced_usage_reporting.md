@@ -9,7 +9,7 @@ This feature is currently still in development and is changing on a day-to-day b
 
 Documentation will change as we roll out more functionality and make the data more actionable and digestable. For inquiries around roadmap and timelines, please reach out to your Customer Success Manager.
 
-##Overview
+## Overview
 
 Administrators can access the Custom Reporting tab from the Plan & Usage section in Datadog, then navigate to: 
 `Plan & Usage`--> `Custom Reporting`.
@@ -22,7 +22,7 @@ The Custom Reporting page provides the following information and functionality:
 * It generates daily .tsv (tab separated values) files for most usage types.
 * It concatenates daily .tsv files at the end of each month and makes it available for download.
 
-###Getting Started
+### Getting Started
 
 In order to start receiving daily data, an administrator will need to create a new report via the user interface. 
 
