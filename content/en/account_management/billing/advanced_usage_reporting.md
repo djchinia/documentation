@@ -58,9 +58,19 @@ This is how the data in a Custom Timeseries Report by Tags using two tags (`team
 
 | public_id   | hour                  | team      | service               | num_custom_timeseries           |
 |-------------|-----------------------|-----------|-----------------------|---------------------------------|
-| publicid1   | 2020-02-01 00:00:00   | <empty>   | service1 | service2   | 50                              |
+| publicid1   | 2020-02-01 00:00:00   | `<empty>` | `service1 | service2` | 50                              |
 | publicid1   | 2020-02-01 09:00:00   | team1     |                       | 28                              |
 | publicid1   | 2020-02-01 18:00:00   | team2     | service3              | 1023                            |
 
+#### How to interpret the values in the tag columns
 
+Note: In the example above, the tag columns are `team` and `service`.
+
+* `<empty>` (*`team` column in row 1 above*): means the resource was tagged with the respective tag but did not have a value.
+* no value (*`service` column in row 2 above*): means the resource (Custom metrics, Infra, APM or NPM hosts, Containers, Synthetics API or Browser checks, AWS Lambda functions, ...) was not tagged with that particular tag.
+* | (pipe) separated values (*`service` column in row 1 above*): present when that particular tag was applied multiple times on the resource.
+* valid tag value (as described [here][1]) (*`team` and `service` columns in row 3 above*): the values of the respective tag.
+
+
+[1]: https://docs.datadoghq.com/tagging/#defining-tags
 
