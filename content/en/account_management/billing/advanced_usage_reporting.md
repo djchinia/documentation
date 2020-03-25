@@ -3,6 +3,12 @@ title: Advanced usage reporting
 kind: documentation
 ---
 
+*Note*
+
+This feature is currently still in development and is changing on a day-to-day basis. We're enabling it on a case basis for customers interested in helping us shape the feature and with an immediate need for the raw data.
+
+Documentation will change as we roll out more functionality and make the data more actionable and digestable. For inquiries around roadmap and timelines, please reach out to your Customer Success Manager.
+
 ##Overview
 
 Administrators can access the Custom Reporting tab from the Plan & Usage section in Datadog, then navigate to: 
