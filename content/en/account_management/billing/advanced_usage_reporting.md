@@ -54,11 +54,11 @@ Data can also be pulled using the tool's Public API (endpoint documentation belo
 
 ### Interpreting the Data
 
-This is how the data in a Custom Timeseries Report by Tags using two tags (`team` and `service`) woudl look like, formatted as a table for easier reading:
+This is how the data in a Custom Timeseries Report by Tags using two tags (`team` and `service`) would look like, formatted as a table for easier reading:
 
 | public_id   | hour                  | team      | service               | num_custom_timeseries           |
 |-------------|-----------------------|-----------|-----------------------|---------------------------------|
-| publicid1   | 2020-02-01 00:00:00   | `<`empty`>` | service1<code>&#124;</code>service2 | 50                              |
+| publicid1   | 2020-02-01 00:00:00   | <\empty>\ | service1 &#124; service2 | 50                              |
 | publicid1   | 2020-02-01 09:00:00   | team1     |                       | 28                              |
 | publicid1   | 2020-02-01 18:00:00   | team2     | service3              | 1023                            |
 
